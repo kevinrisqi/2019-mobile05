@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import polinema.ac.id.starterchapter05.activities.DynamicActivity;
 import polinema.ac.id.starterchapter05.activities.StaticActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -21,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void handlerDynamicFragment(View view) {
+        Intent intent = new Intent(MainActivity.this, DynamicActivity.class);
+        startActivity(intent);
     }
 
     public void handlerStaticFragment(View view) {
