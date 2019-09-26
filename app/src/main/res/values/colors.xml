@@ -7,5 +7,7 @@
     <color name="text">#FFFFFF</color>
     <color name="blue">#5ECAF7</color>
     <color name="green">#21FD09</color>
+    <color name="title">#000000</color>
+    <color name="subtitle">#000000</color>
 
 </resources>
