@@ -38,22 +38,24 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="36dp"
-        android:text="@string/title"
+        android:text="@string/pushups"
         android:textColor="@color/title"
         android:textSize="30sp"
         android:textStyle="bold"
         android:typeface="normal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="259dp"
-        android:layout_height="121dp"
+        android:layout_width="292dp"
+        android:layout_height="107dp"
         android:layout_marginTop="32dp"
-        android:text="@string/subtitle"
+        android:text="@string/pushups_subtitle"
         android:textColor="@color/subtitle"
         android:textSize="14sp"
         android:typeface="normal"
@@ -132,12 +134,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="112dp"
-        android:layout_marginBottom="11dp"
-        android:text="Advanced"
+        android:layout_marginBottom="12dp"
+        android:text="Basic"
         android:textColor="@color/subtitle"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.319"
+        app:layout_constraintStart_toEndOf="@+id/imageView8" />
 
     <ImageView
         android:id="@+id/imageView9"
