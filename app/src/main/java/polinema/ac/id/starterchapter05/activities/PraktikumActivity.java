@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import polinema.ac.id.starterchapter05.R;
+import polinema.ac.id.starterchapter05.fragments.DipsFragment;
 import polinema.ac.id.starterchapter05.fragments.HandstandFragment;
 import polinema.ac.id.starterchapter05.fragments.PushupsFragment;
 
@@ -35,5 +36,10 @@ public class PraktikumActivity extends AppCompatActivity {
     }
 
     public void handleClickLoadDipsFragment(View view) {
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
+        fragmentTransaction.replace(R.id.dynamic_fragment,new DipsFragment(),"DIPS_FRAGMENT");
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
     }
 }
