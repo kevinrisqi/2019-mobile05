@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import polinema.ac.id.starterchapter05.R;
 
-public class FitnessActivity extends AppCompatActivity {
+public class PraktikumActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fitness);
+        setContentView(R.layout.activity_praktikum);
     }
 }
